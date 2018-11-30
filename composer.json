@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0",
+    "name": "degordian/yii2-webhooks",
+    "description": "Yii2 extension for webhooks",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","webhook"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/degordian/yii2-webhooks/issues",
+        "source": "https://github.com/degordian/yii2-webhooks"
+    },
+    "authors": [
+        {
+            "name": "Rudolf Jurišić",
+            "email": "rudolf.jurisic@degordian.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "degordian\\webhooks\\": "src",
+            "tests\\unit\\models\\": "tests/unit/models"
+        }
+    },
+    "require": {
+        "yiisoft/yii2": "^2.0@dev",
+        "yiisoft/yii2-httpclient": "~2.0.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.5.x-dev"
+    }
+}
