@@ -33,7 +33,7 @@ composer require --prefer-dist degordian/yii2-webhooks "*"
 
 ## Setup
 
-Run the migration. It creates the webhook table.
+Run the migration. It creates the _webhook_ and _webhook_log_ tables.
 
 ```bash
 php yii migrate --migrationPath=@degordian/webhooks/migrations
