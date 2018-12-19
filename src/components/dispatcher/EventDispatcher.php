@@ -15,7 +15,11 @@ class EventDispatcher extends Component implements EventDispatcherInterface
     public function dispatch(Event $event, Webhook $webhook)
     {
         $client = new Client();
-        $data = $event->sender->attributes;
+        $data = [
+            'model' => $webhook->getClassName(),
+            'modelEvent' => $webhook->getEventName(),
+            'modelAttributes' => $event->sender->attributes,
+        ];
         try {
             $request = $client->createRequest()
                 ->setMethod($webhook->method)
