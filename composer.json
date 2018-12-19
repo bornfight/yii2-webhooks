@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "degordian/yii2-webhooks",
     "description": "Yii2 extension for webhooks",
     "type": "yii2-extension",
