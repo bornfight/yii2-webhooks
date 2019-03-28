@@ -64,6 +64,7 @@ Create a new webhook by navigating to the _webhooks_ module: `index.php/webhooks
 
 You can use the predefined events from `BaseActiveRecord` class, e.g. `EVENT_AFTER_INSERT` or you can use your own events, e.g. `app\models\Example::EVENT_EXAMPLE`.
 
+### User generated events
 When triggering your custom event, make sure you __send the instantiated model__ like in the following code:
 ```php
 Event::trigger(Example::class, Example::EVENT_EXAMPLE, new Event(['sender' => $model]));
