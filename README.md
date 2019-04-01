@@ -60,7 +60,7 @@ Add the module to the config:
 ## Usage
 
 ### Webhooks
-Create a new webhook by navigating to the _webhooks_ module: `index.php/webhooks?r=/webhooks/create`
+Create a new webhook by navigating to the _webhooks_ module: `index.php?r=webhooks/webhook/create`
 
 You can use the predefined events from `BaseActiveRecord` class, e.g. `EVENT_AFTER_INSERT` or you can use your own events, e.g. `app\models\Example::EVENT_EXAMPLE`.
 
