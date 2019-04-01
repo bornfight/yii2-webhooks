@@ -28,7 +28,7 @@ The preferred way to install this extension is through <a href="http://getcompos
 Run composer installation.
 
 ```bash
-composer require --prefer-dist degordian/yii2-webhooks "*"
+composer require --prefer-dist degordian/yii2-webhooks "dev-master"
 ```
 
 ## Setup
